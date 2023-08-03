@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "react":"cd theme && npm start",
+    "start":"concurrently --kill-others-on-fail \"npm run sever\" \"npm run react\" "
   },
   "keywords": [],
   "author": "",
